@@ -7,6 +7,9 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AlertPage } from '../pages/alert/alert';
+import { InputPage } from '../pages/input/input';
+import { SearchbarPage } from '../pages/searchbar/searchbar';
 
 
 @Component({
@@ -30,7 +33,10 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'My First List', component: ListPage },
+      {title: 'alert', component: AlertPage},
+      {title: 'input', component: InputPage},
+      {title: 'searchbar', component: SearchbarPage}
     ];
   }
 
